@@ -38,8 +38,8 @@
     </script>
 
     <style>
-      .font-garamond {
-        font-family: "EB Garamond", serif;
+      .font-monrope {
+        font-family: Manrope;
       }
 
       .font-poppins {
@@ -48,92 +48,290 @@
     </style>
   </head>
 
-  <body>
+  <body class="mx-auto w-11/12">
     <header>
       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <!-- Include the Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Include Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body class="font-sans">
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Your Website</title>
+          <!-- Include the Tailwind CSS CDN -->
+          <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+          />
+          <!-- Include Font Awesome for icons -->
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          />
+        </head>
+        <body class="font-sans">
+          <!-- Navbar -->
+          <nav class="p-4">
+            <div class="container mx-auto flex justify-between items-center">
+              <!-- Menu Icon for Small Devices -->
+              <div
+                class="menu-icon cursor-pointer text-red-500 text-2xl lg:hidden"
+              >
+                <i class="fas fa-bars"></i>
+              </div>
 
-<!-- Navbar -->
-<nav class="p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <!-- Menu Icon for Small Devices -->
-        <div class="menu-icon cursor-pointer text-red-500 text-2xl lg:hidden">
-            <i class="fas fa-bars"></i>
-        </div>
+              <!-- Left Section with Logo -->
+              <div class="lg:flex items-center">
+                <div
+                  class="text-black-500 text-2xl font-bold flex items-center"
+                >
+                  <h1>
+                    Hocky<span class="text-red-500 text-sm ml-0">'</span>s
+                  </h1>
+                </div>
+              </div>
 
-        <!-- Left Section with Logo -->
-        <div class=" lg:flex items-center">
-            <div class="text-black-500 text-2xl font-bold flex items-center">
-                <h1>Hocky<span class="text-red-500 text-sm ml-1">'</span>s</h1>
-                
+              <!-- Middle Section with Navigation Links (Hidden on Small Devices) -->
+              <div class="hidden lg:flex space-x-4 font-monrope">
+                <a href="#" class="text-btncolor hover:text-red-700">Home</a>
+                <a href="#" class="text-black-300 hover:text-red-700">About</a>
+                <a href="#" class="text-black-300 hover:text-red-700">Pages</a>
+                <a href="#" class="text-black-300 hover:text-red-700">Blog</a>
+                <a href="#" class="text-black-300 hover:text-red-700"
+                  >Contact</a
+                >
+              </div>
+
+              <!-- Right Section with Search Icon and Button -->
+              <div class="lg:flex items-center">
+                <!-- Search Icon within the Button -->
+                <button class="text-black-100 px-4 py-2 rounded">
+                  <!-- Your search icon font goes here (e.g., Font Awesome) -->
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Get Ticket Button -->
+                <button class="bg-red-500 text-white px-4 py-2 rounded">
+                  Get Ticket
+                </button>
+              </div>
             </div>
-        </div>
 
-        <!-- Middle Section with Navigation Links (Hidden on Small Devices) -->
-        <div class="hidden lg:flex space-x-4">
-            <a href="#" class="text-btncolor hover:text-red-700">Home</a>
-            <a href="#" class="text-black-300 hover:text-red-700">About</a>
-            <a href="#" class="text-black-300 hover:text-red-700">Pages</a>
-            <a href="#" class="text-black-300 hover:text-red-700">Blog</a>
-            <a href="#" class="text-black-300 hover:text-red-700">Contact</a>
-        </div>
+            <!-- Mobile Navigation Links (Shown on Small Devices) -->
+            <div class="lg:hidden mt-4 hidden font-monrope">
+              <a href="#" class="text- hover:text-red-700">Home</a>
+              <a href="#" class="text-red-500 hover:text-red-700">About</a>
+              <a href="#" class="text-red-500 hover:text-red-700">Pages</a>
+              <a href="#" class="text-red-500 hover:text-red-700">Blog</a>
+              <a href="#" class="text-red-500 hover:text-red-700">Contact</a>
+            </div>
+          </nav>
 
-        <!-- Right Section with Search Icon and Button -->
-        <div class=" lg:flex items-center">
-            <!-- Search Icon within the Button -->
-            <button class="text-red-500 px-4 py-2 rounded">
-                <!-- Your search icon font goes here (e.g., Font Awesome) -->
-                <i class="fas fa-search"></i>
-            </button>
+          <!-- slider section  -->
+          <div class="mt-8">
+            <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img
+                  src="Images/1.png"
+                  class="w-full bg-black bg-opacity-60 shadow-lg rounded-xl relative"
+                />
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a href="#slide4" class=" bg-black text-white border-none btn btn-circle">❮</a>
+                  <a href="#slide2" class="  bg-black text-white border-none btn btn-circle">❯</a>
+                </div>
 
-            <!-- Get Ticket Button -->
-            <button class="bg-red-500 text-white px-4 py-2 rounded">Get Ticket</button>
+                <div class="absolute bomx">
+                
+                  <div class="bg-black rounded-xl p-5 font-monrope">
+                    <h1 class="text-white text-lg font-bold ">Meet all the heroes from the field</h1>
+                    <p class="text-white text-sm mt-2 ">If you join our clube you meet all the famous person.<br>So its a big opportunity of you.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="slide2" class="carousel-item relative w-full">
+                <img
+                  src="images/2.png"
+                  class="w-full bg-black bg-opacity-60"
+                />
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a href="#slide1" class="btn btn-circle">❮</a>
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute">
+                
+                  <h1 class="text-white mt-4">Slider 2</h1>
+                  <p class="text-white">This is the second slider image.</p>
+                </div>
+              </div>
+              <div id="slide3" class="carousel-item relative w-full">
+                <img
+                  src="images/3.png"
+                  class="w-full bg-black bg-opacity-60"
+                />
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a href="#slide2" class="btn btn-circle">❮</a>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute">
+               
+                  <h1 class="text-white mt-4">Slider 3</h1>
+                  <p class="text-white">This is the third slider image.</p>
+                </div>
+              </div>
+              <div id="slide4" class="carousel-item relative w-full">
+                <img
+                  src="images/4.png"
+                  class="w-full bg-black bg-opacity-60"
+                />
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute">
+                 
+                  <h1 class="text-white mt-4">Slider 4</h1>
+                  <p class="text-white">This is the fourth slider image.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <!-- 3rd section title -->
+          <div class="text-center mt-16">
+            <h1 class="text-3xl font-bold font-monrope">Professional Hockeys Club</h1>
+            <p class="font-normal text-base mt-8 font-monrope"> This is a club for all professional so you will be comfort in the club,<br>you are always welcome our club,May you enjoy your best
+             </p>
+          </div>
+
+          <!--3rd section  progress -->
+ 
+
+
+<div class="font-sans bg-white-100 min-h-auto lg:flex items-center justify-center mt-16">
+<div class="text-center p-7">
+    <div class="radial-progress w-30 h-30 text-blue-500 font-bold" style="--value:87;" role="progressbar">87%</div>
+    <h1 class="text-black text-lg font-bold mt-4">Prayer Facility</h1>
+    <p class="text-black text-sm mt-2">We have much prayer facility. You can also find comfort in our club, so feel free to join.</p>
+</div>
+<div class="text-center p-7">
+    <div class="radial-progress w-30 h-30 text-red-500 font-bold" style="--value:95;" role="progressbar">95%</div>
+    <h1 class="text-black text-lg font-bold mt-4">Experienced Coach</h1>
+    <p class="text-black text-sm mt-2">Our authority hire best coach for our students so we are the best and all coaches are top ranked.</p>
+</div>
+<div class="text-center p-7">
+    <div class="radial-progress w-30 h-30 text-yellow-500 font-bold" style="--value:90;" role="progressbar">90%</div>
+    <h1 class="text-black text-lg font-bold mt-4">Senior Player</h1>
+    <p class="text-black text-sm mt-2">All senior plyer are very much helpjull for you when you face any hard problem  they help.</p>
+</div>
+<div class="text-center p-7">
+    <div class="radial-progress w-30 h-30 text-green-500 font-bold" style="--value:80;" role="progressbar">80%</div>
+    <h1 class="text-black text-lg font-bold mt-4">Training Ground</h1>
+    <p class="text-black text-sm mt-2"> Thats true we have most efficeent training gide so if you want to know everything you are always welcome.</p>
+</div>
+
+</div>
+
+
+<!-- 4th seaction for grid heading -->
+<div class="text-center mt-16">
+  <h1 class="text-3xl font-bold font-monrope">Program Sections</h1>
+  <p class="font-normal text-base mt-4 font-monrope"r>you are always welcome our programe section <br>May you enjoy your best
+   </p>
+</div>
+
+<!-- grid section of 4th -->
+
+
+
+
+
+
+<!-- Card Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 grid-rows-2 p-4 lg:p-8  ">
+
+    <!-- Card 1 -->
+    <div class="relative bg-cover bg-center h-40 lg:h-72 lg:w-auto flex flex-col rounded-xl" style="background-image: url('Images/2.png');">
+        <div class=" rounded-xl bg-gradient-to-tr from-black  to-transparent absolute top-0 left-0 w-full h-full"></div>
+        <div class="flex-grow flex flex-col justify-center lg:mt-2 p-4 z-0 font-monrope">
+            <h1 class="text-white text-2xl font-bold mb-2">Junior Program</h1>
+            <p class="text-white text-sm mb-4">Our one of the best work is junior programe.In this programe we learn some best formula for the juniors.This is for semi-professionals we help them for grow-up and we served a best coach for the juniors.</p>
+            <button class="bg-red-500 text-white py-2 px-2 h-10 w-36 rounded">Register Now!</button>
         </div>
     </div>
 
-    <!-- Mobile Navigation Links (Shown on Small Devices) -->
-    <div class="lg:hidden mt-4 hidden">
-        <a href="#" class="text- hover:text-red-700">Home</a>
-        <a href="#" class="text-red-500 hover:text-red-700">About</a>
-        <a href="#" class="text-red-500 hover:text-red-700">Pages</a>
-        <a href="#" class="text-red-500 hover:text-red-700">Blog</a>
-        <a href="#" class="text-red-500 hover:text-red-700">Contact</a>
+ <!-- Card 1 -->
+ <div class="relative bg-cover bg-center h-40 lg:h-72 lg:w-auto flex flex-col rounded-xl" style="background-image: url('Images/2.png');">
+  <div class=" rounded-xl bg-gradient-to-tr from-black  to-transparent absolute top-0 left-0 w-full h-full"></div>
+  <div class="flex-grow flex flex-col justify-center lg:mt-2 p-4 z-0 font-monrope ">
+      <h1 class="text-white text-2xl font-bold mb-2">Teenager Program</h1>
+      <p class="text-white text-sm mb-4">Here lots of gromming seassion and spceialy for the teen boys and girls we provide varities advice.They are always excited for learn new things so we support and help them to developed their skills .</p>
+      <button class="bg-red-500 text-white py-2 px-2 h-10 w-36 rounded">Register Now!</button>
+  </div>
+</div>
+
+
+    <!-- Card 3 -->
+    <div class="relative rounded-2xl bg-cover bg-center   md:h-auto lg:col-span-2 " style="background-image: url(Images/4.png);">
+        <div class=" rounded-2xl z-0 bg-gradient-to-tr from-black to-transparent absolute top-0 left-0 w-full h-full"></div>
+        <div class="flex-grow flex flex-col justify-center lg:mt-16 p-4  font-monrope">
+            <h1 class="text-white text-2xl font-bold mb-2 z-0">Professional Program</h1>
+            <p class="text-white text-sm mb-4  z-0">Thats of the professionals and here we support those people whos are <br>very efficient this fild in this field all very comperative of all <br>profesionls so we always try the best for their to do better thing.</p>
+            <button class="bg-red-500 text-white py-2 px-2 h-10 w-36 rounded z-0">Register Now!</button>
+        </div>
     </div>
-</nav>
 
-<!-- Your content goes here -->
+</div>
 
-<script>
-    // JavaScript for handling menu toggle on small devices
-    document.addEventListener('DOMContentLoaded', function () {
-        var menuIcon = document.querySelector('.menu-icon');
-        var mobileNavLinks = document.querySelector('.lg\\:hidden');
-
-        menuIcon.addEventListener('click', function () {
-            mobileNavLinks.classList.toggle('hidden');
-        });
-    });
-</script>
-
-</body>
-</html>
-
-      
-      
+</div>
 
 
-    </header>
-    <main></main>
-    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--  for the first nav javacode Your content goes here -->
+
+          <script>
+            // JavaScript for handling menu toggle on small devices
+            document.addEventListener("DOMContentLoaded", function () {
+              var menuIcon = document.querySelector(".menu-icon");
+              var mobileNavLinks = document.querySelector(".lg\\:hidden");
+
+              menuIcon.addEventListener("click", function () {
+                mobileNavLinks.classList.toggle("hidden");
+              });
+            });
+          </script>
+
+
+
+    
+
+
+
+
+
+
   </body>
 </html>
