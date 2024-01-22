@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- googele font  link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontosam link kit -->
+    <script
+      src="https://kit.fontawesome.com/1826742cf0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- daisyui instoll cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- for tailwind  css  custom color class use -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btncolor: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="font-sans">
+
+<!-- Navbar -->
+<nav class="p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Menu Icon for Small Devices -->
+        <div class="menu-icon cursor-pointer text-red-500 text-2xl lg:hidden">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Left Section with Logo -->
+        <div class=" lg:flex items-center">
+            <div class="text-black-500 text-2xl font-bold flex items-center">
+                <h1>Hocky<span class="text-red-500 text-sm ml-1">'</span>s</h1>
+                
+            </div>
+        </div>
+
+        <!-- Middle Section with Navigation Links (Hidden on Small Devices) -->
+        <div class="hidden lg:flex space-x-4">
+            <a href="#" class="text-btncolor hover:text-red-700">Home</a>
+            <a href="#" class="text-black-300 hover:text-red-700">About</a>
+            <a href="#" class="text-black-300 hover:text-red-700">Pages</a>
+            <a href="#" class="text-black-300 hover:text-red-700">Blog</a>
+            <a href="#" class="text-black-300 hover:text-red-700">Contact</a>
+        </div>
+
+        <!-- Right Section with Search Icon and Button -->
+        <div class=" lg:flex items-center">
+            <!-- Search Icon within the Button -->
+            <button class="text-red-500 px-4 py-2 rounded">
+                <!-- Your search icon font goes here (e.g., Font Awesome) -->
+                <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Get Ticket Button -->
+            <button class="bg-red-500 text-white px-4 py-2 rounded">Get Ticket</button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Links (Shown on Small Devices) -->
+    <div class="lg:hidden mt-4 hidden">
+        <a href="#" class="text- hover:text-red-700">Home</a>
+        <a href="#" class="text-red-500 hover:text-red-700">About</a>
+        <a href="#" class="text-red-500 hover:text-red-700">Pages</a>
+        <a href="#" class="text-red-500 hover:text-red-700">Blog</a>
+        <a href="#" class="text-red-500 hover:text-red-700">Contact</a>
+    </div>
+</nav>
+
+<!-- Your content goes here -->
+
+<script>
+    // JavaScript for handling menu toggle on small devices
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuIcon = document.querySelector('.menu-icon');
+        var mobileNavLinks = document.querySelector('.lg\\:hidden');
+
+        menuIcon.addEventListener('click', function () {
+            mobileNavLinks.classList.toggle('hidden');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+      
+      
+
+
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
